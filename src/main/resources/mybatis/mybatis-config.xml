@@ -14,4 +14,14 @@
         <typeAlias type="java.util.LinkedList" alias="LinkedList" />
         <!-- 下面是具体类对应的实体类别名 -->
     </typeAliases>
+
+    <plugins>
+        <!-- 分页插件 -->
+        <plugin interceptor="com.github.pagehelper.PageHelper" >
+            <property name="dialect" value="oracle" />
+            <!-- 下面参数默认为false，若为true，使用BowBounds分页会进行count查询-->
+            <property name="rowBoundWithCount" value="true" />
+        </plugin>
+    </plugins>
+
 </configuration>
