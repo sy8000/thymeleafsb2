@@ -8,6 +8,7 @@ class Thymeleafsb2ApplicationTests {
 
     @Test
     void contextLoads() {
+
     }
 
 }
